@@ -20,7 +20,7 @@ There are 2 ways that you can view this project:
 - If you have Node.js installed on your machine, you can run the project through the Node package `http-server` by opening up the project in a CLI and running the following commands:
 
 ```js
-npm install
+npm ci
 npm start
 ```
 
