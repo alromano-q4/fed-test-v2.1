@@ -6,6 +6,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "chai-css": "^0.0.4",
+    "handlebars-lint": "^1.0.0",
     "http-server": "^0.12.1",
     "jsdom": "^22.0.0",
     "mocha": "^10.2.0"
@@ -13,17 +14,20 @@
   "scripts": {
     "start": "http-server ./src",
     "grade-all": "grade-I grade-II grade-III",
-    "grade-I": "html-i css-i js-i",
+    "grade-I": "npm-run-all html-i css-i js-i",
     "html-i": "mocha ./tests/fed-I/html.test.js",
     "css-i": "mocha ./tests/fed-I/css.test.js",
-    "js-i": "",
-    "grade-II": "html-ii css-ii js-ii",
+    "js-i": "mocha ./tests/fed-I/javascript.test.js",
+    "grade-II": "npm-run-all html-ii css-ii js-ii",
     "html-ii": "",
     "css-ii": "",
     "js-ii": "",
-    "grade-III": "html-iii css-iii js-iii",
+    "grade-III": "npm-run-all html-iii css-iii js-iii",
     "html-iii": "",
     "css-iii": "",
     "js-iii": ""
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
