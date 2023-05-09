@@ -1,12 +1,28 @@
 {
   "name": "q4-fed-test",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.12.1"
+    "chai": "^4.3.7",
+    "http-server": "^0.12.1",
+    "jsdom": "^22.0.0",
+    "mocha": "^10.2.0"
   },
   "scripts": {
-    "start": "http-server ./src"
+    "start": "http-server ./src",
+    "grade-all": "grade-I grade-II grade-III",
+    "grade-I": "html-i css-i js-i",
+    "html-i": "mocha ./tests/fed-I/html.test.js",
+    "css-i": "",
+    "js-i": "",
+    "grade-II": "html-ii css-ii js-ii",
+    "html-ii": "",
+    "css-ii": "",
+    "js-ii": "",
+    "grade-III": "html-iii css-iii js-iii",
+    "html-iii": "",
+    "css-iii": "",
+    "js-iii": ""
   }
 }
