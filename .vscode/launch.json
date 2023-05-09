@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Karma Attached Tests",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}/tests/fed-I",
+            "url": "http://localhost:9876/debug.html",
+            "runtimeArgs": [
+                "--headless"
+            ]
+        }
+    ]
+}

@@ -12,6 +12,7 @@
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.2.0",
     "karma-mocha": "^2.0.1",
+    "karma-viewport": "^1.0.9",
     "mocha": "^10.2.0"
   },
   "scripts": {
